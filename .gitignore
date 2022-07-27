@@ -5,3 +5,6 @@
 resources
 # hugo genrate site
 public
+# tcardgen
+tcardgen/font/*
+!tcardgen/font/.gitkeep
