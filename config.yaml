@@ -1,0 +1,167 @@
+baseurl: https://reud.net
+languageCode: ja-jp
+
+# このディレクトリのテーマをインポートする。
+themesDir: .
+theme: theme
+paginate: 5
+
+# アセットの場所を(project root)/assetsへ
+assetDir: assets
+
+# ブログタイトル
+title: reud.net
+
+# content(記事)のディレクトリ
+contentDir: contents
+
+# GA Tracking ID
+googleAnalytics: G-DCJTG3SZ9N
+
+# Theme i18n support
+# Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk
+DefaultContentLanguage: ja
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: true
+
+permalinks:
+    post: /p/:slug/
+    page: /:slug/
+
+params:
+    mainSections:
+        - v2_post
+    featuredImageField: image
+    rssFullContent: true
+    favicon: https://reud.net/favicon_io/favicon.ico
+
+    footer:
+        since: 2017
+        customText:
+
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006 15:04 MST
+
+    sidebar:
+        emoji: 👾
+        subtitle: 最近食べ物のカロリーを気にする様になったが、3日に1回くらい我慢が出来なくなり家系ラーメンに吸い込まれている。
+        avatar:
+            enabled: true
+            local: true
+            src: avatar.png
+
+    article:
+        math: true
+        toc: true
+        readingTime: true
+        license:
+            enabled: true
+            default: Licensed under CC BY-NC-SA 4.0
+
+    comments:
+        enabled: false
+    widgets:
+        enabled:
+            - search
+            - archives
+            #- tag-cloud
+
+        archives:
+            limit: 5
+
+        #tagCloud:
+            #limit: 10
+
+    opengraph:
+        twitter:
+            # Your Twitter username
+            site: releaseud
+
+            # Available values: summary, summary_large_image
+            card: summary
+
+    defaultImage:
+        opengraph:
+            enabled: true
+            local: true
+            src: reud-sd.png
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+
+        # Available values: auto, light, dark
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+### Custom menu
+### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          params:
+              ### For demonstration purpose, the home link will be open in a new tab
+              newTab: false
+              icon: home
+        - identifier: Diary
+          name: Dairy
+          url: /categories/diary/
+          weight: -95
+          params:
+              ### For demonstration purpose, the home link will be open in a new tab
+              newTab: false
+              icon: home
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/reud
+          params:
+              icon: brand-github
+
+        - identifier: twitter
+          name: Twitter
+          url: https://twitter.com/releaseud
+          params:
+              icon: brand-twitter
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: true
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4

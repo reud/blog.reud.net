@@ -18,5 +18,10 @@ themeをpublic submoduleにしているのは、元リポジトリの変更に�
 
 contentsをprivate submoduleにしているのは分かりやすさから。ディレクトリレベルで分けることでテーマを変えたりアプデした時の負担を大幅に減らすことが出来るはず
 
+## テーマの更新
 
+
+rebaseを基本的使って、相手のコミットを正として入れ込んだ後に自分のコミットを入れ込む
+
+git fetchでmaster(main)のブランチを最新にした後にgit rebase master(main)で行けるはず
 

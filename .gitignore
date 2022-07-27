@@ -1,2 +1,5 @@
 .DS_Store
-
+# for .hugo_build.lock
+*.lock
+# hugo auto generate
+resources
