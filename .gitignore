@@ -3,3 +3,5 @@
 *.lock
 # hugo auto generate
 resources
+# hugo genrate site
+public
