@@ -1,3 +1,7 @@
 [submodule "contents"]
 	path = contents
 	url = git@github.com:reud/blog-contents.git
+[submodule "theme"]
+	path = theme
+	url = git@github.com:reud/blog-theme.git
+	branch = reud
