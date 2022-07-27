@@ -1,2 +1,5 @@
-# .net
-myblog
+# reud.net
+
+ブログ管理用プロジェクト
+
+
