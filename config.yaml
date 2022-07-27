@@ -15,6 +15,9 @@ title: reud.net
 # content(記事)のディレクトリ
 contentDir: contents
 
+# タイムアウト
+timeout: 60000
+
 # GA Tracking ID
 googleAnalytics: G-DCJTG3SZ9N
 
