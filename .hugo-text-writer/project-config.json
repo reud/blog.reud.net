@@ -1,0 +1,36 @@
+{
+	"article": {
+		"folderPath": "/contents/v2_post/",
+		"templatePath": "template/article.md",
+		"title": "<TODAY_DATE>の記事",
+		"datetime": "<TODAY_DATETIME>",
+		"author": "Anonymous",
+		"category": "article",
+		"templateStr": "<TODAY_DATE>の記事\n\n<!--more-->\n\n\nここに記事の文章を好きなように書く",
+		"folderName": "<RANDOM_STR>"
+	},
+	"authors": [
+		"reud"
+	],
+	"diary": {
+		"folderPath": "/contents/diary/",
+		"templatePath": "template/diary.md",
+		"title": "<TODAY_DATE>の日記",
+		"datetime": "<TODAY_DATETIME>",
+		"author": "Anonymous",
+		"category": "diary",
+		"templateStr": "<TODAY_DATE>の日記\n\n<!--more-->\n\n\nここに日記の文章を好きなように書く",
+		"folderName": "<TODAY_DATE8D>"
+	},
+	"tags": [
+		"general"
+	],
+	"recentlyOpenFiles": [
+	],
+	"categories": [
+		"article",
+		"diary",
+		"ethereum",
+		"tech"
+	]
+}
