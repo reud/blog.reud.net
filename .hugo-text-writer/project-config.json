@@ -1,37 +1,42 @@
 {
 	"article": {
-		"folderPath": "/contents/v2_post/",
-		"templatePath": "template/article.md",
+		"folderPath": "/contents/article/",
 		"title": "<TODAY_DATE>の記事",
 		"datetime": "<TODAY_DATETIME>",
-		"author": "Anonymous",
-		"category": "article",
-		"templateStr": "<TODAY_DATE>の記事\n\n<!--more-->\n\n\nここに記事の文章を好きなように書く",
+		"author": "reud",
+		"category": [
+			"article"
+		],
 		"folderName": "<RANDOM_STR>"
 	},
-	"authors": [
-		"reud"
-	],
 	"diary": {
 		"folderPath": "/contents/diary/",
-		"templatePath": "template/diary.md",
 		"title": "<TODAY_DATE>の日記",
 		"datetime": "<TODAY_DATETIME>",
-		"author": "Anonymous",
-		"category": "diary",
-		"templateStr": "<TODAY_DATE>の日記\n\n<!--more-->\n\n\nここに日記の文章を好きなように書く",
+		"author": "reud",
+		"category": [
+			"diary"
+		],
 		"folderName": "<TODAY_DATE8D>"
 	},
 	"tags": [
 		"general"
 	],
+	"authors": [
+		"Anonymous",
+		"reud"
+	],
 	"recentlyOpenFiles": [
-		"/Users/reud/Projects/reud.net/contents/diary/20220727/index.md"
+		"C:\\Users\\reud\\Projects\\reud.net\\contents\\diary\\20210111\\index.md",
+		"C:\\Users\\reud\\Projects\\reud.net\\contents\\diary\\20220730\\index.md"
 	],
 	"categories": [
 		"article",
-		"diary",
-		"ethereum",
-		"tech"
+		"diary"
+	],
+	"customSchema": [],
+	"customFrontMatterValues": [
+		"twitter_card: \"index.png\"",
+		"tags: \n  - ^_^"
 	]
 }

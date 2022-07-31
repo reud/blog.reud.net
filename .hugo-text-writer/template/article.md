@@ -6,5 +6,5 @@
 
 ここに記事の文章を好きなように書く
 
-
-<!-- HugoTextWriterからsubmoduleを更新するスクリプト -> ../../../content-update.sh -->
+<!-- windows: ..\..\..\content-update.bat -->
+<!-- mac: ../../../content-update.sh -->
