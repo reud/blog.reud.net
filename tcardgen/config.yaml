@@ -3,7 +3,7 @@ title:
     px: 223
     py: 252
   fgHexColor: "#000000"
-  fontSize: 72
+  fontSize: 60
   fontStyle: Bold
   maxWidth: 946
   lineSpacing: 10
