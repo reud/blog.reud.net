@@ -38,7 +38,7 @@ params:
         - v2_post
     featuredImageField: image
     rssFullContent: true
-    favicon: https://reud.net/favicon_io/favicon.ico
+    favicon: favicon-32x32.png
 
     footer:
         since: 2017
@@ -49,8 +49,8 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 👾
-        subtitle: 最近食べ物のカロリーを気にする様になったが、3日に1回くらい我慢が出来なくなり家系ラーメンに吸い込まれている。
+        emoji: 😵
+        subtitle: 夏バテでごはんを食べなくなるのかと思ったら汗かいているせいでしょっぱいものを食べたくなってしまい結果太った
         avatar:
             enabled: true
             local: true
@@ -62,7 +62,7 @@ params:
         readingTime: true
         license:
             enabled: true
-            default: Licensed under CC BY-NC-SA 4.0
+            default: Licensed under CC BY-NC-ND 4.0
 
     comments:
         enabled: false
