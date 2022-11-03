@@ -49,8 +49,8 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 😵
-        subtitle: 夏バテでごはんを食べなくなるのかと思ったら汗かいているせいでしょっぱいものを食べたくなってしまい結果太った
+        emoji: 😑
+        subtitle: 労働中と人と居る時間以外の家に居る時の無気力な時間が長すぎてやることリストが終わらない。
         avatar:
             enabled: true
             local: true
