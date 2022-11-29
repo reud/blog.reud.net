@@ -30,7 +30,8 @@
 				"bungcip.better-toml",
 				"davidanson.vscode-markdownlint",
 				"mushan.vscode-paste-image",
-				"akmittal.hugofy"
+				"akmittal.hugofy",
+				"undefined_publisher.hugo-writer"
 			]
 		}
 	},

@@ -8,7 +8,7 @@ ARG VARIANT=hugo
 ARG VERSION=latest
 
 # Download Hugo
-RUN apt-get update && apt-get install -y ca-certificates openssl git curl && \
+RUN apt-get update && apt-get install -y ca-certificates openssl git curl xclip && \
     rm -rf /var/lib/apt/lists/* && \
     case ${VERSION} in \
     latest) \

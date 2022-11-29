@@ -22,6 +22,10 @@
       {
         "command": "hugo-writer.create-diary",
         "title": "Create Diary"
+      },
+      {
+        "command": "hugo-writer.create-article",
+        "title": "Create Article"
       }
     ]
   },

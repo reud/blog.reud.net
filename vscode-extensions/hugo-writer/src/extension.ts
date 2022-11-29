@@ -30,6 +30,44 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('Hello World from hugo-writer!');
 	});
 
+	const createArticleCmd = vscode.commands.registerCommand('hugo-writer.create-article', async () => {
+		const workspacePath = vscode.workspace.workspaceFolders;
+		if (!workspacePath) {
+			vscode.window.showInformationMessage('vscode.workspace.workspaceFolders returns undefined');
+			return;
+		}
+
+		if (workspacePath[0].name !== 'reud.net' ) {
+			vscode.window.showErrorMessage(`workspacePath[0].name is ${workspacePath[0].name}. not reud.net . `);
+		}
+
+		const title = await vscode.window.showInputBox({
+			title: '記事のタイトル'
+		});
+		
+		if (!title) {
+			return;
+		}
+
+		let reudNetPath = workspacePath[0].uri;
+		const articlePath = vscode.Uri.parse(`${reudNetPath.path}/contents/v2_post/${title}/index.md`);
+
+		try {
+			await vscode.workspace.fs.stat(articlePath);
+			vscode.window.showTextDocument(articlePath, { viewColumn: vscode.ViewColumn.Beside });
+		} catch {
+			// 何もしない
+		}
+
+		const stdout = execSync(`hugo new v2_post/${title}/index.md --kind article`,{'cwd': reudNetPath.path});
+		vscode.window.showInformationMessage(stdout.toString());
+
+		const textDocument = await vscode.workspace.openTextDocument(articlePath);
+		await	vscode.window.showTextDocument(textDocument,1,false);
+
+
+	});
+
 	const createDiaryCmd = vscode.commands.registerCommand('hugo-writer.create-diary', async () => {
 		const workspacePath = vscode.workspace.workspaceFolders;
 		if (!workspacePath) {
@@ -66,12 +104,24 @@ export function activate(context: vscode.ExtensionContext) {
 	createDiaryButton.command = 'hugo-writer.create-diary';
 	createDiaryButton.text = '日記を作る';
 
+	const createArticleButton = vscode.window.createStatusBarItem(
+		vscode.StatusBarAlignment.Right,
+		0
+	);
 
+	createArticleButton.command = 'hugo-writer.create-article';
+	createArticleButton.text = '記事を作る';
+
+	
+
+	context.subscriptions.push(createArticleCmd);
+	context.subscriptions.push(createArticleButton);
 	context.subscriptions.push(createDiaryCmd);
 	context.subscriptions.push(createDiaryButton);
 	context.subscriptions.push(helloWorldCommand);
 
 	createDiaryButton.show();
+	createArticleButton.show();
 }
 
 // This method is called when your extension is deactivated
