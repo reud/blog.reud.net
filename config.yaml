@@ -16,7 +16,7 @@ title: reud.net
 contentDir: contents
 
 # タイムアウト
-timeout: 60000
+timeout: 1200000
 
 # GA Tracking ID
 googleAnalytics: G-DCJTG3SZ9N
